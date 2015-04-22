@@ -10,11 +10,11 @@
                 <key>Developer Identifier</key>
                 <string>H6AP27PW23</string>
                 <key>CFBundleVersion</key>
-                <string>1.0.1</string>
+                <string>1.0.2</string>
                 <key>CFBundleShortVersionString</key>
-                <string>1.0.1</string>
+                <string>1.0.2</string>
                 <key>URL</key>
-                <string>https://github.com/marekpiechut/translate/releases/download/v1.0.1/TranslateMe.safariextz</string>
+                <string>https://github.com/marekpiechut/translate/releases/download/v1.0.2/TranslateMe.safariextz</string>
             </dict>
         </array>
     </dict>
