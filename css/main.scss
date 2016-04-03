@@ -4,32 +4,63 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300);
 @charset "utf-8";
 @import
-  "bootstrap"
+	"bootstrap"
 ;
 
+body {
+	font-weight: 300;
+	font-size: 16px;
+}
+
 .drop-caps {
-  &:first-letter {
-    font-size: 300%;
-    letter-spacing: 5px;
-    line-height: 33%;
-    color: #FE3376;
-  }
+	padding-top: 1em;
+	&:first-letter {
+		font-size: 300%;
+		letter-spacing: 5px;
+		color: #FE3376;
+		line-height: 33%;
+	}
+}
+
+.page-contents {
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 .post {
-  color: #434649;
-}
-
-
-body {
-  font-weight: 300;
-  font-size: 16px;
+	color: #434649;
 }
 
 .inline-block {
-  display: inline-block;
+	display: inline-block;
 }
 
 .text-small {
-  font-size: $font-size-sm;
+	font-size: $font-size-sm;
+}
+
+.border-light-grey {
+	border: 1px solid $gray-light;
+}
+
+.bordered-section {
+	border-top: 1px solid $gray-lighter;
+	border-bottom: 1px solid $gray-lighter;
+}
+
+.p-a-05 {
+	padding: 0.5rem !important;
+}
+
+.p-r-05 {
+	padding-right: 0.5rem !important;
+}
+
+.vert-center-table {
+	display: table;
+
+	span,div {
+		display: table-cell;
+		vertical-align: middle;
+	}
 }

@@ -1,0 +1,16 @@
+<div class="m-t-1 m-b-1 p-a-05 bordered-section">
+	<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+		<small class="vert-center-table">
+			<span itemprop="image" class="p-r-05">
+				<img
+					class="img-circle border-light-grey"
+					style="height: 38px;"
+					src="{{ site.github.url }}/img/{{ include.author | replace: ' ', '_'}}-small.jpg"
+					alt="Picture"/>
+			</span>
+			<span itemprop="name">
+				{{ include.author }}
+			</span>
+		</small>
+	</span>
+</div>
