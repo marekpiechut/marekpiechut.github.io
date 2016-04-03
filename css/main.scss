@@ -1,0 +1,35 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@charset "utf-8";
+@import
+  "bootstrap"
+;
+
+.drop-caps {
+  &:first-letter {
+    font-size: 300%;
+    letter-spacing: 5px;
+    line-height: 33%;
+    color: #FE3376;
+  }
+}
+
+.post {
+  color: #434649;
+}
+
+
+body {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-small {
+  font-size: $font-size-sm;
+}

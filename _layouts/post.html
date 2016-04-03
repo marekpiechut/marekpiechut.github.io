@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header text-md-center m-t-3 m-b-1">
+    <div class="text-md-left inline-block">
+      <h1 class="m-b-0" itemprop="name headline">{{ page.title }}</h1>
+      <p class="text-muted text-small"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    </div>
+  </header>
+
+  <div class="drop-caps" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div>
+    <a
+      class="twitter-share-button"
+      href="https://twitter.com/intent/tweet">
+      Tweet
+    </a>
+  </div>
+
+</article>
