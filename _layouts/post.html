@@ -23,13 +23,36 @@ layout: default
 	<div class="drop-caps" itemprop="articleBody">
 		{{ content }}
 	</div>
+	<div class="vert-center-table" style="line-height: 0;">
+		<span class="share-button">
+			<a class="twitter-share-button"
+				href="https://twitter.com/intent/tweet">
+				Tweet
+			</a>
+		</span>
+		<span class="share-button">
+			<div class="fb-share-button"
+				data-href="{{ page.url | prepend: site.github.url }}"
+				data-layout="button">
+			</div>
+		</span>
+	</div>
+	<div id="disqus_thread" class="m-t-3">
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	</div>
+	<script>
+		var disqus_config = function() {
+			this.page.url = "{{ post.url | prepend: site.github.url }}";
+			this.page.identifier = "{{ post.title }}";
+		};
+		(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document,
+				s = d.createElement('script');
 
-	<div>
-		<a
-		class="twitter-share-button"
-		href="https://twitter.com/intent/tweet">
-		Tweet
-	</a>
-</div>
+			s.src = '//marekpiechut.disqus.com/embed.js';
 
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
 </article>
