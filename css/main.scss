@@ -7,6 +7,9 @@
 	"bootstrap"
 ;
 
+$color-pink: #FE3376;
+$color-pink-dark: #993D5B;
+
 body {
 	font-weight: 300;
 	font-size: 16px;
@@ -17,7 +20,7 @@ body {
 	padding-top: 1em;
 	&:first-letter {
 		font-size: 300%;
-		color: #FE3376;
+		color: $color-pink;
 		line-height: 33%;
 	}
 }
@@ -36,11 +39,20 @@ body {
 }
 
 .text-small {
-	font-size: $font-size-sm;
+	font-size: .750rem;
 }
 
 .border-light-grey {
 	border: 1px solid $gray-light;
+}
+
+.border-underline {
+	border-bottom: 1px solid $gray-lightest;
+}
+
+h4 {
+	color: $gray-dark;
+	margin-bottom: 0;
 }
 
 .bordered-section {
@@ -54,6 +66,11 @@ body {
 
 .p-r-05 {
 	padding-right: 0.5rem !important;
+}
+
+code {
+	color: $color-pink-dark;
+	font-size: 80%;
 }
 
 .vert-center-table {
