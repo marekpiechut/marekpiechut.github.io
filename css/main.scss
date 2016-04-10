@@ -42,6 +42,10 @@ body {
 	font-size: .750rem;
 }
 
+.text-center {
+	text-align: center;
+}
+
 .border-light-grey {
 	border: 1px solid $gray-light;
 }
@@ -60,12 +64,22 @@ h4 {
 	border-bottom: 1px solid $gray-lighter;
 }
 
+.p-t-05 {
+	padding-top: 0.5rem !important;
+}
+
 .p-a-05 {
 	padding: 0.5rem !important;
 }
 
 .p-r-05 {
 	padding-right: 0.5rem !important;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 code {
@@ -82,7 +96,23 @@ code {
 	}
 }
 
+.flex-middle {
+	display: flex;
+	align-items: center;
+}
+
 .share-button {
 	vertical-align: top;
 	padding-right: 10px;
+}
+
+.link-black {
+	&:hover {
+		color: #373a3c;
+	}
+}
+
+hr.narrow {
+	margin-left: 10%;
+	margin-right: 10%;
 }

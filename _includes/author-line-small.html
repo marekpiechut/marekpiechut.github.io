@@ -1,0 +1,18 @@
+<div class="p-t-05" itemprop="author" itemscope itemtype="http://schema.org/Person">
+	<small class="flex-middle">
+		<span itemprop="image" class="p-r-05">
+			<img
+				class="img-circle border-light-grey"
+				style="height: 18px;"
+				src="{{ site.github.url }}/img/{{ include.author | replace: ' ', '_'}}-small.jpg"
+				alt="Picture"/>
+		</span>
+		<span itemprop="name">
+			{{ include.author }}
+		</span>
+		<span class="text-muted text-small" style="flex-grow: 1; text-align: right;">
+			<a href="{{ include.post.url | prepend: site.github.url }}">read more...</a>
+		</span>
+	</small>
+</div>
+</div>
