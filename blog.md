@@ -1,9 +1,12 @@
 ---
-layout: page
+layout: default
 title: Blog
 permalink: /blog/
 idx: 0
 ---
+<header class="post-header m-b-2">
+  <h1 class="post-title">{{ page.title }}</h1>
+</header>
 
 {% assign first_post = site.posts.first %}
 <div class="m-b-1 row">

@@ -1,3 +1,50 @@
 ---
 layout: default
 ---
+
+<div class="row m-y-3" />
+	<div class="col-md-4 text-center">
+		<span itemprop="image" class="p-r-05 p-y-1">
+			<img
+				class="img-circle border-light-grey"
+				style="height: 72px;"
+				src="{{ site.github.url }}/img/Marek_Piechut.jpg"
+				alt="Picture"/>
+		</span>
+	</div>
+	<div class="col-md-8">
+		<div>
+			<strong>Marek Piechut</strong> - Engineer at TomTom. Working on microservices, data stores,
+			real time map processing, and rich web interfaces.
+		</div>
+		<div class="small">Get in touch: <a href="http://twitter.com/marekpiechut">@marekpiechut</a></div>
+	</div>
+</div>
+
+<h4 class="m-y-3 text-center">On the blog:</h4>
+{% assign first_post = site.posts.first %}
+<div class="m-b-1 row">
+  <div class="col-md-12">
+    <div class="border-underline" style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 10px;">
+      <a class="post-link link-black" href="{{ first_post.url | prepend: site.github.url }}">
+          <h4 class="ellipsis">{{ first_post.title }}</h4>
+      </a>
+      <span class="text-muted text-small">{{ first_post.date | date: "%b %-d, %Y" }}</span>
+    </div>
+
+    <div class="post m-b-3">
+      {{ first_post.content | strip_html | truncatewords:100}}
+
+
+      {% if first_post.author %}
+        {% include author-line-small.html author=page.author post=first_post%}
+      {% elsif site.author %}
+        {% include author-line-small.html author=site.author post=first_post%}
+      {% endif %}
+  </div>
+</div>
+
+<h4 class="m-b-3 text-center">Projects:</h4>
+<div class="row">
+
+</div>
