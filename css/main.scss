@@ -83,6 +83,12 @@ h4 {
 	padding-right: 0.5rem !important;
 }
 
+@media (max-width: #{map-get($grid-breakpoints, "md")}) {
+  .p-b-1-sm {
+		padding-bottom: 1em;
+	}
+}
+
 .ellipsis {
 	white-space: nowrap;
 	text-overflow: ellipsis;
