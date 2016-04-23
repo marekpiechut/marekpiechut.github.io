@@ -1,5 +1,11 @@
+{% if include.mode %}
+  {% assign mode = include.mode %}
+{% else %}
+  {% assign mode = 'light' %}
+{% endif %}
+
 <header>
-  <nav class="navbar navbar-light">
+  <nav class="navbar navbar-{{mode}}">
     <div class="nav navbar-nav">
       <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       <span class="pull-xs-right">

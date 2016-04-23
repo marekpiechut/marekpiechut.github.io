@@ -16,6 +16,13 @@ body {
 	line-height: 1.6em;
 }
 
+.main-header {
+	color: white;
+	background: url( "{{ site.github.url }}/img/bg.jpg" ) no-repeat;
+	/* background-image: linear-gradient(rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1)), url( "{{ site.github.url }}/img/bg.jpg" );
+	background-repeat: no-repeat; */
+}
+
 .drop-caps {
 	padding-top: 1em;
 	&:first-letter {
@@ -111,6 +118,8 @@ code {
 }
 
 .link-black {
+	color: #373a3c;
+
 	&:hover {
 		color: #373a3c;
 	}

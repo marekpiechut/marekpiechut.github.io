@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: page
 title: Blog
 permalink: /blog/
 idx: 0
 ---
-<header class="post-header m-b-2">
-  <h1 class="post-title">{{ page.title }}</h1>
+<header class="post-header m-y-3">
+  <h4 class="post-title text-center">{{ page.title }}</h4>
 </header>
 
 {% assign first_post = site.posts.first %}
@@ -62,7 +62,7 @@ idx: 0
     <a class="post-link link-black" href="{{ post.url | prepend: site.github.url }}">
         <h4 class="">{{ post.title }}</h4>
     </a>
-    <div class="text-small text-muted">
+    <div class="text-small text-muted m-t-1">
       {{ post.content | strip_html | truncatewords:30 }}
     </div>
   </div>
