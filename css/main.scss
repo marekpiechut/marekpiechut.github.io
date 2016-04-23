@@ -85,7 +85,12 @@ h4 {
 
 @media (max-width: #{map-get($grid-breakpoints, "md")}) {
   .p-b-1-sm {
-		padding-bottom: 1em;
+		padding-bottom: 1em !important;
+	}
+
+	.p-x-0-sm {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 }
 
