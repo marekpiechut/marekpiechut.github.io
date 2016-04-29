@@ -16,6 +16,10 @@ body {
 	line-height: 1.6em;
 }
 
+.header {
+	font-weight: 400;
+}
+
 .main-header {
 	color: white;
 	background: url( "{{ site.github.url }}/img/bg.jpg" ) no-repeat;
