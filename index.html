@@ -31,27 +31,32 @@ layout: default
 </div>
 
 <div class="container">
-<h4 class="m-y-3 text-center">On the blog:</h4>
-<div class="row">
-{% for post in site.posts offset:0 limit:2 %}
-<div class="col-md-6 m-b-3">
-  <div class="border-underline" style="display: flex; flex-direction: row; width: 100%; justify-content: space-between; margin-bottom: 10px;">
-    <a class="post-link link-black" href="{{ post.url | prepend: site.github.url }}">
-        <h4 class="ellipsis">{{ post.title }}</h4>
-    </a>
-  </div>
+	<h4 class="m-y-3 text-center">On the blog:</h4>
+	<div class="row">
+	{% for post in site.posts offset:0 limit:2 %}
+	<div class="col-md-6 m-b-3">
+	  <div class="border-underline" style="display: flex; flex-direction: row; width: 100%; justify-content: space-between; margin-bottom: 10px;">
+	    <a class="post-link link-black" href="{{ post.url | prepend: site.github.url }}">
+	        <h4 class="ellipsis">{{ post.title }}</h4>
+	    </a>
+	  </div>
 
-  <div class="post">
-    {{ post.content | strip_html | truncatewords:50}}
-    <div class="text-muted text-small">{{ post.date | date: "%b %-d, %Y" }}</div>
+	  <div class="post">
+	    {{ post.content | strip_html | truncatewords:50}}
+	    <div class="text-muted text-small">{{ post.date | date: "%b %-d, %Y" }}</div>
 
-    {% if post.author %}
-      {% include author-line-small.html author=page.author post=post%}
-    {% elsif site.author %}
-      {% include author-line-small.html author=site.author post=post%}
-    {% endif %}
-</div>
-{% endfor %}
-</div>
-{% include footer.html %}
+	    {% if post.author %}
+	      {% include author-line-small.html author=page.author post=post%}
+	    {% elsif site.author %}
+	      {% include author-line-small.html author=site.author post=post%}
+	    {% endif %}
+	</div>
+	{% endfor %}
+	</div>
+	<div class="row">
+		<div class="col-md-12 m-b-3">
+			<h6><a href='{{site.github.url }}/blog'>More posts...</a></h6>
+		</div>
+	</div>
+	{% include footer.html %}
 </div>
