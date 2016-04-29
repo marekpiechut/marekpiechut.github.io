@@ -15,7 +15,7 @@ idx: 0
       <a class="post-link link-black" href="{{ first_post.url | prepend: site.github.url }}">
           <h4 class="ellipsis">{{ first_post.title }}</h4>
       </a>
-      <span class="text-muted text-small">{{ first_post.date | date: "%b %-d, %Y" }}</span>
+      <span class="text-muted text-small text-nowrap">{{ first_post.date | date: "%b %-d, %Y" }}</span>
     </div>
 
     <div class="post m-b-3">
