@@ -8,7 +8,7 @@ layout: page
 			<h1 class="m-b-0" itemprop="name headline">{{ page.title }}</h1>
 			<p class="text-muted text-small">
 				<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-					{{ page.date | date: "%b %-d, %Y" }}
+					{{ page.date | date: "%b %-d, %Y" }} - {{ page.tags | sort | join: ", " }}
 				</time>
 			</p>
 		</div>

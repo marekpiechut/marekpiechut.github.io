@@ -2,11 +2,11 @@
 layout: post
 title:  "One year with React"
 date:   2016-07-13 23:59:59 +0200
-categories: react javascript
+tags: [react, javascript]
 ---
 It's almost a year now since I've started working with Facebook React. After all this time I've learned a lot about how to build React apps, so they are easy to test, maintain and so components can be easily reused.
 
-Here are most important conclusions. I think following them will make your life really easier, especially if you're just starting with React.
+Here are my most important conclusions. I think following them will make your life really easier, especially if you're just starting with React.
 
 # Is it worth it?
 
