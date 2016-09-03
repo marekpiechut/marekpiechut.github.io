@@ -17,3 +17,6 @@ github_username:  marekpiechut
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
