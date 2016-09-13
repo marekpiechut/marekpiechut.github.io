@@ -66,7 +66,12 @@ To be honest, we still have quite a few these stateful display components in our
 
 # Testing
 
-We don't use [Jest](https://facebook.github.io/jest/) for testing. In my opinion mocking everything implicitly is not a very good idea. After a while you don't know what's mocked and what's not. All our components receive dependencies via props, so standard Jasmine/Karma testing suite is totally enough. We mock things and create spies as needed using plain JS and Jasmine. Every time we needed something more meant it was rather a design issue than library limitation (components trying to do too much or too big/nested data structures).
+We don't use [Jest](https://facebook.github.io/jest/) for testing.
+In my opinion mocking everything implicitly is not a very good idea. After a while you don't know what's mocked and what's not.
+
+**Update:** *As of version [15.0](https://facebook.github.io/jest/blog/2016/09/01/jest-15.html) Jest [no longer mocks things by default](https://facebook.github.io/jest/blog/2016/09/01/jest-15.html#disabled-automocking). Haven't used it very much, but I think it might be worth to try it out now.*
+
+All our components receive dependencies via props, so standard Jasmine/Karma testing suite is totally enough. We mock things and create spies as needed using plain JS and Jasmine. Every time we needed something more meant it was rather a design issue than library limitation (components trying to do too much or too big/nested data structures).
 
 Even stores are passed to stateful components using props. This way we can easily mock them or use real objects when needed and discard them afterwards. No ugly shared state that might not be cleaned up and break tests.
 
