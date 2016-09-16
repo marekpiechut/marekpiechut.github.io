@@ -1,0 +1,21 @@
+@startuml
+
+skinparam dpi 300
+
+skinparam state {
+  BackgroundColor #B2D6EC
+  BorderColor #436E8E
+  ArrowColor #0F100B
+}
+
+Closed: ->Call service normally
+Open : ->Fail immediately
+HalfOpen: ->Try only once
+
+Open -right-> HalfOpen : Grace period passed
+HalfOpen -up-> Closed : Retry succeeded (reset counters)
+HalfOpen -left-> Open : Retry failed (reset grace period)
+Closed -down-> Open : Failed (above threshold)
+Closed -> Closed : Success/Failed (below threshold)
+
+@enduml

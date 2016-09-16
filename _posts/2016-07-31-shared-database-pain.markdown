@@ -2,7 +2,7 @@
 layout: post
 title:  "Sharing database between services will hurt you"
 date:   2016-07-31 23:33:41 +0200
-categories: architecture microservices
+tags: [architecture, microservices]
 ---
 
 
