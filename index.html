@@ -35,7 +35,7 @@ layout: default
 	<div class="row">
 	{% for post in site.posts offset:0 limit:2 %}
 	<div class="col-md-6 m-b-3">
-	  <div class="border-underline" style="display: flex; flex-direction: row; width: 100%; justify-content: space-between; margin-bottom: 10px;">
+	  <div class="border-underline" style="margin-bottom: 10px;">
 	    <a class="post-link link-black" href="{{ post.url | prepend: site.github.url }}">
 	        <h4 class="ellipsis">{{ post.title }}</h4>
 	    </a>

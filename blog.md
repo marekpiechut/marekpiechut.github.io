@@ -11,7 +11,7 @@ idx: 0
 {% assign first_post = site.posts.first %}
 <div class="m-b-1 row">
   <div class="col-md-12">
-    <div class="border-underline" style="display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 10px;">
+    <div class="border-underline" style="margin-bottom: 10px;">
       <a class="post-link link-black" href="{{ first_post.url | prepend: site.github.url }}">
           <h4 class="ellipsis">{{ first_post.title }}</h4>
       </a>
@@ -33,7 +33,7 @@ idx: 0
 <div class="row">
 {% for post in site.posts offset:1 limit:2 %}
 <div class="col-md-6 m-b-3">
-  <div class="border-underline" style="display: flex; flex-direction: row; width: 100%; justify-content: space-between; margin-bottom: 10px;">
+  <div class="border-underline" style="margin-bottom: 10px;">
     <a class="post-link link-black" href="{{ post.url | prepend: site.github.url }}">
         <h4 class="ellipsis">{{ post.title }}</h4>
     </a>
