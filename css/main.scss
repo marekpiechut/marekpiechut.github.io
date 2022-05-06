@@ -13,7 +13,7 @@ $color-pink-dark: #993D5B;
 body {
 	font-weight: 300;
 	font-size: 16px;
-	line-height: 1.6em;
+	line-height: $line-height;
 }
 
 .header {
@@ -154,4 +154,15 @@ code {
 hr.narrow {
 	margin-left: 10%;
 	margin-right: 10%;
+}
+
+img.full-page {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.post-footer {
+	margin-top: 3em;
+	font-weight: bold;
+	text-align: center;
 }

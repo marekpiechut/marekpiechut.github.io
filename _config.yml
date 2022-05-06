@@ -9,9 +9,11 @@
 author: Marek Piechut
 title: Marek Piechut
 email: marek.piechut@gmail.com
-description: Marek Piechut - Engineer at TomTom. Working on microservices, data stores, real time maps and rich web apps.
+description: >
+  Software dev messing with hardware & electronics. Posting on microservices, databases, programming languages and weird keyboards.
+  Founder @dayonepl. Creator of "Po Prostu JS" podcast. Now building custom keyboards.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://marekpiechut.github.io" # the base hostname & protocol for your site
+url: "https://marekpiechut.github.io" # the base hostname & protocol for your site
 twitter_username: marekpiechut
 github_username:  marekpiechut
 
