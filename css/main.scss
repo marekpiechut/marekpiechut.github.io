@@ -9,11 +9,13 @@
 
 $color-pink: #FE3376;
 $color-pink-dark: #993D5B;
+$color-bg: #f4f4f4;
 
 body {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: $line-height;
+	background-color: $color-bg;
 }
 
 .header {
@@ -21,8 +23,8 @@ body {
 }
 
 .main-header {
-	color: white;
-	background: url( "{{ site.github.url }}/img/bg.jpg" ) no-repeat;
+	// color: white;
+	// background: url( "{{ site.github.url }}/img/bg.jpg" ) no-repeat;
 	/* background-image: linear-gradient(rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 1)), url( "{{ site.github.url }}/img/bg.jpg" );
 	background-repeat: no-repeat; */
 }

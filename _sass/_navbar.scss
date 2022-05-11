@@ -146,18 +146,27 @@
     float: left;
   }
 
+  img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
   .nav-link {
     display: block;
     padding-top:    .425rem;
     padding-bottom: .425rem;
 
     + .nav-link {
-      margin-left: 1rem;
+      margin-left: 0.6rem;
     }
   }
 
   .nav-item + .nav-item {
-    margin-left: 1rem;
+    margin-left: 0.6rem;
   }
 }
 

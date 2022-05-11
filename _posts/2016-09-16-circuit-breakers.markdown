@@ -26,7 +26,7 @@ While throwing errors, without even hitting backend, we do a check if grace peri
 
 Here's a graph to illustrate all the state changes: 
 
-![State diagram]({{ site.url }}/img/circuit-breaker-diag1.png){: .img-fluid .full-page}
+![State diagram]({{ site.url }}/img/posts/circuit-breaker-diag1.png){: .img-fluid .full-page}
 
 # Implementing circuit breaker in JavaScript
 

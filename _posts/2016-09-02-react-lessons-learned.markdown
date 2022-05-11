@@ -18,7 +18,7 @@ If you're still unsure if React is for you, I highly recommend you give it a try
 
 # Project structure
 
-From the beginning we started to organise our code after domain concepts and functionalities. This is simply the best way to keep stuff around. Forget all this nonsense about `actions`, `components`, `stores` folders. After your project grows it'll make you suffer. Keeping all business related stuff together makes moving things around really easy. You can easily find things you plan to change, remove functionalities and refactor.
+From the beginning we started to organize our code after domain concepts and functionalities. This is simply the best way to keep stuff around. Forget all this nonsense about `actions`, `components`, `stores` folders. After your project grows it'll make you suffer. Keeping all business related stuff together makes moving things around really easy. You can easily find things you plan to change, remove functionalities and refactor.
 
 So how does our directory structure looks like? Here's an example:
 
