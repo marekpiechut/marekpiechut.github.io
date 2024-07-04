@@ -1,0 +1,41 @@
+baseURL: 'https://marekpiechut.github.io'
+languageCode: 'en-us'
+title: "rand(4) Thoughts"
+theme: "PaperMod"
+copyright: "© 2024 - Marek Piechut"
+enableEmoji: true
+pygmentsUseClasses: true
+
+menu: 
+  main:
+    - Identifier: "home"
+      Name: "Home"
+      URL: "/"
+    - Identifier: "tags"
+      Name: "Tags"
+      URL: "/tags/"
+    - Identifier: "search"
+      Name: "Search"
+      URL: "/search/"
+    - Identifier: "rss"
+      Name: "RSS"
+      URL: "/index.xml"
+params:
+  ShowToc: true
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  homeInfoParams:
+    Title: Marek Piechut
+    Content: Software & Hardware random thoughts - Microservices on GameBoy Advance anyone?
+
+
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/marekpiechut"
+    - name: "x"
+      url: "https://x.com/@marekpiechut"
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
