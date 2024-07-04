@@ -23,8 +23,6 @@ aliases:
 
 ---
 
-![image](images/1.jpeg#layoutTextWidth)
-
 Getting lazy loaded web page elements based on scroll position has been a performance or maintenance nightmare. You either loosen components encapsulation and build a complex mechanism with single scroll handler notifying elements when needed, or end up with huge amount of `onScroll` handlers that will kill page performance. Thanks to [W3C working draft from 2019](https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface) being already implemented in all major browsers we can get rid of all this stuff. Just use `IntersectionObserver` and get fast and elegant lazy loads when needed.
 
 So if you no longer care about IE compatibility (and please stop if you do, we need to kill that monster), then stay with me and check out how to cheaply get `onScroll` lazy loads in React. We’ll base our example on exercise library we’ve added to [CrossKeeper](http://crosskeeper.app/) - product we are working on.
