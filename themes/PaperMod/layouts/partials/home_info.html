@@ -9,5 +9,8 @@
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
     </footer>
+    <div style="margin-top: 40px;">
+    {{- partial "extend_pre_footer.html" . }}
+    </div>
 </article>
 {{- end -}}
