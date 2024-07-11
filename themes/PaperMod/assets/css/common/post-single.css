@@ -153,6 +153,10 @@
     border-radius: var(--radius);
 }
 
+.post-content p + div.highlight {
+    margin-top: -10px;
+}
+
 .post-content .highlight:not(table) {
     margin: 10px auto;
     background: var(--code-block-bg) !important;
@@ -190,10 +194,10 @@
 }
 
 .post-content code {
-    margin: auto 4px;
-    padding: 4px 6px;
+    padding: 2px 4px;
     font-size: 0.78em;
     line-height: 1.5;
+    vertical-align: text-bottom;
     background: var(--code-bg);
     border-radius: 2px;
 }
