@@ -6,6 +6,7 @@ tags:
 title: Postgres as document store, or "you don't need ORM in Node.js"
 
 cover:
+  relative: true
   image: cover.jpg
 ---
 

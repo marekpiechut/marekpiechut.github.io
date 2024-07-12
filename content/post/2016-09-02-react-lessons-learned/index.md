@@ -5,6 +5,7 @@ tags:
 - javascript
 title: One year with React
 cover:
+  relative: true
   image: images/cover.jpg
 ---
 It's almost a year now since I'm working with [React](https://facebook.github.io/react) and [Flux](https://facebook.github.io/flux/). After all this time I think I've learned a lot about how to build React apps, so they are easy to test, maintain and that components can be easily reused.

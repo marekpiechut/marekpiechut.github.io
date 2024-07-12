@@ -9,7 +9,8 @@ description: ""
 subtitle: "I’ve been working with Git for some time now, probably 5 years or so. Tried (or been forced to) quite a few other VCS-es before (CVS, SVN…"
 
 image: images/1.png
-cover: 
+cover:
+  relative: true 
   image: images/1.png 
 images:
  - "images/1.png"

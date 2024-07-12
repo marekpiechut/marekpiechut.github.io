@@ -9,7 +9,8 @@ description: ""
 subtitle: "Sometimes your React app doesn’t perform as good as it should. Check out how we’re using React Profiler to find and fix slow components."
 
 image: images/1.jpeg
-cover: 
+cover:
+  relative: true 
   image: images/1.jpeg 
 images:
  - "images/1.jpeg"

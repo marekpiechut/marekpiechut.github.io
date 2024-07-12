@@ -6,6 +6,7 @@ tags:
 title: (Not so) simple Postgres queue system skeleton
 
 cover:
+  relative: true
   image: cover.jpg
 ---
 

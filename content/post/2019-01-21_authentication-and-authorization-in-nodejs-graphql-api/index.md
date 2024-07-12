@@ -9,7 +9,8 @@ description: ""
 subtitle: "Most of GraphQL APIs that are developed are probably not meant for public access without any authorization. Sooner or later you’ll need to…"
 
 image: images/1.jpeg
-cover: 
+cover:
+  relative: true 
   image: images/1.jpeg 
 images:
  - "images/1.jpeg"

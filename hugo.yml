@@ -21,6 +21,7 @@ menu:
       Name: "RSS"
       URL: "/index.xml"
 params:
+  GlobalCover: "/cover.jpg"
   ShowToc: true
   ShowShareButtons: true
   ShowCodeCopyButtons: true

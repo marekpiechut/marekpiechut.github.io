@@ -9,7 +9,8 @@ description: ""
 subtitle: "Getting lazy loaded web page elements based on scroll position has been a performance or maintenance nightmare. You either loosen…"
 
 image: images/1.jpeg
-cover: 
+cover:
+  relative: true 
   image: images/1.jpeg 
 images:
  - "images/1.jpeg"

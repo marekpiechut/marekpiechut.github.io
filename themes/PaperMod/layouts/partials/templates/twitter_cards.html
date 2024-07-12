@@ -1,3 +1,7 @@
+{{- if site.Params.GlobalCover -}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ site.Params.GlobalCover | absURL }}" />
+{{ else }}
 {{- if .Params.cover.image -}}
 <meta name="twitter:card" content="summary_large_image" />
 {{- if (ne $.Params.cover.relative true) }}
@@ -13,7 +17,8 @@
 {{- else -}}
 <meta name="twitter:card" content="summary"/>
 {{- end -}}
-{{- end }}
+{{- end -}}
+{{- end -}}
 <meta name="twitter:title" content="{{ .Title }}"/>
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
 {{- /* Deprecate site.Social.twitter in favor of site.Params.social.twitter */}}

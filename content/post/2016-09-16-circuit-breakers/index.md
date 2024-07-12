@@ -5,6 +5,7 @@ tags:
 - javascript
 title: Circuit breakers - You don't need to wait for failures.
 cover:
+  relative: true
   image: images/cover.jpg
 ---
 

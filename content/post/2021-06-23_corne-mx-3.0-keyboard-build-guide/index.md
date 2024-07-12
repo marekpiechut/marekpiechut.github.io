@@ -9,7 +9,8 @@ description: ""
 subtitle: "Introduction"
 
 image: images/2.jpeg
-cover: 
+cover:
+  relative: true 
   image: images/2.jpeg 
 images:
  - "images/1.jpeg"

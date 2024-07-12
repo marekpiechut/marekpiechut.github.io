@@ -6,6 +6,7 @@ tags:
 title: Sharing database between services will hurt you
 
 cover:
+  relative: true
   image: images/cover.jpg
 
 ---

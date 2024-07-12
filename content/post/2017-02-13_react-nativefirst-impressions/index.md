@@ -9,7 +9,8 @@ description: "First thoughts about React Native after more than a month of iOS a
 subtitle: "As You might already know we’re building one of our apps — Quotes Keeper at DayOne.pl using Facebooks’ React Native framework. After more…"
 
 image: images/1.png
-cover: 
+cover:
+  relative: true 
   image: images/1.png 
 images:
  - "images/1.png"

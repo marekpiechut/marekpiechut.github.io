@@ -9,7 +9,8 @@ description: "If you’re using Webpack with React you can get some nice size an
 subtitle: "Get some nice size and load time optimizations for React app with just a few small configuration changes in Webpack."
 
 image: images/1.jpeg
-cover: 
+cover:
+  relative: true 
   image: images/1.jpeg 
 images:
  - "images/1.jpeg"

@@ -9,7 +9,8 @@ description: ""
 subtitle: "… or does it make sense to use new or Object.create anymore?"
 
 image: images/1.jpeg
-cover: 
+cover:
+  relative: true 
   image: images/1.jpeg 
 images:
  - "images/1.jpeg"
